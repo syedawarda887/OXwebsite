@@ -1,0 +1,437 @@
+@media screen and (max-width:600px) {
+  .containerad img{
+    width: 100% !important;
+   height: 80px;
+   padding: 20px;
+  }
+
+}
+@media screen and (max-width:600px) {
+  .containerad img{
+    width: 100% ;
+   height: 80px;
+  }
+}
+@media screen and (min-width:887) {
+  .containerad img{
+ 
+
+  }
+}
+.containerad {
+ 
+    justify-content: center;
+    text-align: center;
+
+  }
+  .navbar {
+    z-index: 1000; /* Add a higher z-index value */
+}
+.carousel-item .banner{
+  position: relative;
+
+}
+.image-text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+.image-text >h2{
+font-size: 50px;font-family: Arial, sans-serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  font-style: oblique; font-weight: 500; color: #FFFAFC;
+}
+.image-text>p {
+ font-size: 30px;font-family: Arial, sans-serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  font-style: oblique; font-weight: 500; color: #020812;
+}
+
+@media screen and (min-width:600px) {
+  .oslider{
+    /* height: 300px;
+    width: auto; */
+  }
+}
+
+/* Media query for medium screens (tablets) */
+@media screen and (max-width: 800px) {
+  .image-text>h2{
+     font-size: 20px;
+   
+  }
+  .image-text>p {
+    font-size: 15px; /* Adjust the font size for tablets */
+    
+  }
+}
+
+/* Media query for small screens (mobile devices) */
+@media screen and (max-width: 379px) {
+  .image-text>h2{
+     font-size: 10px;
+  }
+  .image-text>p {
+    font-size: 10px; /* Adjust the font size for mobile devices */
+  }
+}
+@keyframes fade-in-left {
+0% {
+opacity: 0;
+transform: translateX(-50px); /* Start offscreen to the left */
+}
+100% {
+opacity: 1;
+transform: translateX(0); /* End position, fully visible */
+}
+}
+
+/* Apply the animation to an element */
+.fade-in-left {
+animation: fade-in-left 2s ease-in-out forwards; /* Change the duration and easing as needed */
+
+}
+/* Define the keyframes for the fade in right animation */
+@keyframes fade-in-right {
+0% {
+opacity: 0;
+transform: translateX(50px); /* Start offscreen to the right */
+}
+100% {
+opacity: 1;
+transform: translateX(0); /* End position, fully visible */
+}
+}
+
+/* Apply the animation to an element */
+.fade-in-right {
+animation: fade-in-right 2s ease-in-out forwards; /* Change the duration and easing as needed */
+
+}
+
+.image-text {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+ 
+  /* padding: 10px; */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+/* @media only screen and (max-width: 230px){
+  .image-text{
+padding-top: 20%;
+padding-left: 0%;
+  }
+} */
+  li {
+    font-size: 15px;
+    font-weight: 400;
+    
+  }
+
+  .nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+   
+  }
+
+  .superNav {
+    background-color: #E0b4b1;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    color: #242424d1;
+    font-weight: 400;
+
+  }
+
+  @media only screen and (max-width: 1260px) {
+    .heading {
+      font-size: 18px;
+
+    }
+  }
+
+  /* owl carousel css */
+  h1 {
+    font-family: Arial, sans-serif;
+  font-style: oblique;
+  color: #242424d1;
+  }
+
+  /* Your CSS styles here */
+  .owl-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  .owl-carousel .item>.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+
+
+    width: 80%;
+    margin: 0 auto;
+    height: 330px;
+  }
+
+  .owl-carousel .item>.card:hover {
+    box-shadow: 1px 4px 8px #242424d1 !important;
+    transform: scale(1.01);
+  }
+
+  @media (max-width: 768px) {
+
+
+    .owl-carousel .item {
+      margin: 0 auto;
+      width: auto !important;
+      /* height: 200px; */
+      /* Adjust the width for blets and mobile */
+    }
+
+    .owl-carousel .item>.card:hover {
+      box-shadow: 1px 4px 8px #242424d1 !important;
+      transform: scale(1.01);
+    }
+
+  }
+
+  @media (max-width: 300px) {
+
+
+    .owl-carousel .item {
+      margin: 0 auto;
+      width: 50%;
+     
+      /* Adjust the width for blets and mobile */
+    }
+
+    .owl-carousel .item>.card:hover {
+      box-shadow: 1px 4px 8px #242424d1 !important;
+      transform: scale(1.01);
+    }
+
+  }
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .owl-dot {
+    background: #dcdcdc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  .owl-dot:hover {
+    background: #E0b4b1;
+  }
+
+  .owl-dot.active {
+    background: #E0b4b1;
+  }
+
+  /* category section css  */
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+  }
+ 
+
+  @media screen and (max-width: 800px) {
+    .category-container{
+       gap: 10px;
+       
+    }
+    .category-container .category-item2{
+height: 50px;
+      width: auto;
+      gap: 10px;
+    
+    }
+
+  }
+  @media screen and (min-width: 700px) {
+    .category-container{
+       gap: 10px;
+       
+    }
+    .category-container .category-item2{
+height: 90px;
+      width: auto;
+      gap: 10px;
+    
+    }
+
+  }
+  .category-item {
+
+   
+    border-radius: 50%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+  }
+
+
+  .category-item2 {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+  }
+
+  /* todays top css */
+  .img-hover {
+    overflow: hidden;
+  }
+  
+  .img-hover img {
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+    /* Ensure images fit within their containers */
+  }
+
+  .img-hover:hover img {
+    transform: scale(1.1);
+    /* Adjust the scale factor for zoom effect */
+  }
+  .img-hover {
+    position: relative;
+    
+  }
+  
+  .imagine {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+   .img-hover:hover.imagine {
+    opacity: 0.3;
+  }
+  
+  .img-hover:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #ffffff;
+   
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    color: #242424d1;
+    font-weight: 400;
+  border: 4px solid #E0b4b1;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  /* cards css */
+  .card {
+
+    height: 350px;
+    width: 100%
+  }
+
+  .card-body {
+    width: 100%;
+
+
+
+  }
+
+  @media (max-width: 768px) {
+
+
+    .card {
+      margin: 0 auto;
+      width: 100%;
+     
+      /* Adjust the width for blets and mobile */
+    }
+    .card img{
+     height: 200px;
+     width: 100% !important;
+     object-fit: cover;
+  
+      /* Adjust the width for blets and mobile */
+    }
+
+    .owl-carousel .item>.card {
+      width: 100% !important;
+    }
+
+.card .card-body{
+height: 90px;
+}
+    .owl-carousel .item>.card:hover {
+      box-shadow: 1px 4px 8px #242424d1 !important;
+      transform: scale(1.01);
+    }
+
+  }
+
+  @media (max-width: 1230px) {
+
+
+    .card {
+      margin: 0 auto;
+      /* width: ; */
+      /* Adjust the width for blets and mobile */
+    }
+
+    .owl-carousel .item>.card:hover {
+      box-shadow: 1px 4px 8px #242424d1 !important;
+      transform: scale(1.01);
+    }
+
+  }
+
+
+  .card:hover {
+    box-shadow: 1px 2px 4px #242424d1 !important;
+    transform: scale(1.01);
+    border: 0px !important;
+  }

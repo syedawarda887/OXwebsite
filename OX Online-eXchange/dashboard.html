@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500&family=Open+Sans:ital,wght@0,400;1,300&family=Schibsted+Grotesk&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+     
+<title> Online eXchange</title>
+<link rel="icon"  href="logo (1).png" style="width: auto;" >
+</head>
+<style>
+    body{
+    background-color: #FFFAFC;
+    }
+   
+   #Fname,#Lname,#pwname,#cpname{
+    width: 200px;
+    
+    
+    }
+    #btn-btn{
+        width: 420px;
+    }
+    .class{
+        background-image:url(./images/back2.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+       
+    }
+    .form{
+        align-items: center !important ;
+        text-align: center !important ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       
+
+
+    }
+   
+   
+    .class>.heading121>.form>.btn{
+       background-color: #E0B4B1;
+        border: none;
+        color: white;
+    }
+    .class>.heading121>.form>.btn:hover{
+        color: white;
+         background-color: #E0B4B1;
+    }
+    #loginh{
+        color: #242424d1;;
+    }
+    #loginh:hover{
+        color: #242424d1;;   
+    }
+  
+    .borderok h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color:  #242424d1;;
+    }
+    .heading121{
+     border: 1px solid ;
+        width: max-content;
+        background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+        
+    }
+    @media only screen and (max-width: 600px){
+        .heading121{
+            width:auto;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #Fname,#Lname,#pwname,#cpname{
+        width: 150px;
+    }
+    #btn-btn{
+        width: 100px;
+    }
+    }
+    .flexkaran{
+        display: flex;
+        gap: 10px;
+        
+    }
+    span:hover{
+        color: rgb(218, 218, 218);
+    }
+    @media only screen and (max-width: 600px){
+        .flexkaran1{
+            display: flex;
+           
+            /* align-items: center; */
+        
+        }
+        #pname,#dname{
+    width: 315px;
+}
+    }
+
+
+   
+    /* Your existing styles */
+
+    /* Adjustments for smaller screens */
+    @media only screen and (max-width: 768px) {
+        .heading {
+            font-size: 18px;
+        }
+        .class {
+            height: auto;
+            padding: 20px 0;
+        }
+
+        #Fname, #Lname, #pwname, #cpname, #pname, #dname {
+            width: 100%;
+        }
+
+        #btn-btn {
+            width: 100%;
+        }
+
+        .flexkaran, .flexkaran1 {
+            flex-direction: column;
+            align-items: center;
+        }
+       
+
+        
+        /* Add more responsive adjustments as needed */
+    }
+    
+
+</style>
+<body>
+  <header>
+    <div class="superNav border-bottom py-2 ">
+        <div class="container-fluid">
+           
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img src="./images/logo.png" height="40px" width="35%" style="margin-top: -3px;"  alt="">
+                </div>
+                <div class="col-md-4 "> 
+                    <h4 class="heading fade-in-left " style="justify-content: center; text-align: center;"
+                    >Your Fashion Sharing Hub</h4></div>            <div class="col-md-4  text-end">
+                    <span class="me-3"><i class="fa-regular fa-bell me-3 fa-lg mt-3" style="color: #020812; " ></i><a class="text-muted" href="#" ></a></span>
+                    <span class="me-3"><i class="fa-regular fa-comment me-3 fa-lg mt-3" style="color: #020812; " ></i><a class="text-muted" href="#" ></a></span>
+                    <span class="me-3"><i class="fa-regular fa-user me-3 fa-lg mt-3" style="color: #020812;" ></i><a class="text-muted" href="#" ></a></span>
+                </div>
+       
+    </div>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm" style="height: 45px;">
+        <div class="container-fluid ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            
+           
+                <ul class="navbar-nav   ">
+                   
+                    
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link  dropdown-toggle mx-1 text-uppercase active" aria-current="page" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="women Bridal.html">Bridal</a>
+                        <a class="dropdown-item" href="women casual.html">Casual</a>
+                        <a class="dropdown-item" href="women ethnic.html">Ethnic</a>
+                        </div>
+                </li>
+                <li class="nav-item dropdown ">
+                        <a class="nav-link mx-3 text-uppercase active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Men</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="man Eastern.html"> Eastern</a>
+                            <a class="dropdown-item" href="man casual.html"> Casual</a>
+                            <a class="dropdown-item" href="men ethnic.html"> Ethnic</a>
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-3 text-uppercase active dropdown-toggle "aria-current="page" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Kids</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="kids party.html"> Party</a>
+                            <a class="dropdown-item" href="kids casual.html">Casual</a>
+                            <a class="dropdown-item" href="kids ethnic.html"> Ethnic</a>
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-3 text-uppercase active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acessories</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="bags.html">Bags</a>
+                            <a class="dropdown-item" href="shoes.html">Shoes</a>
+                            <a class="dropdown-item" href="watches.html">Watches</a>
+                            </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link mx-3 text-uppercase active " aria-current="page" href="index.html" >Home</a>
+                       
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link mx-3 text-uppercase active " aria-current="page" href="Aboutus.html" >About Us</a>
+                     
+                  </li>
+                    
+                    <form class="d-flex  " style="margin-left: 40px;">
+                        <input class="form-control me-2 mt-1" type="search" size="50"  style="height: 33px;" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark mt-1" style="height: 33px;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      </form>
+                       
+                    
+                  
+                </ul>
+
+                <ul class="navbar-nav  ms-auto">
+                    <li class="nav-item py-1">
+                        <a class="nav-link mx-1 text-uppercase active " aria-current="page" href="signup.html">SIGN UP</a>                          
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3 text-uppercase active " href="upload.html"><button style="border-radius: 10px; border: 1px solid; background-color: #E0B4B1; ">RENT OUT</button></a>
+                  
+                </li>
+                   
+
+                 </ul>  
+            
+            </div>
+               
+            </div>
+        </div>
+    </nav>
+    
+</header>
+    
+    <div class="class">
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="container heading121" style="flex-wrap: wrap;" >
+        <br>
+        <div class="borderok">
+        <h1>Sign In</h1>
+    </div>
+<form class="form row">
+   
+<br>
+<div class="flexkaran" style="flex-wrap: wrap;">
+    <div class="form">
+        <input type="text"  class="form-control  121 " placeholder="First Name" id="Fname">
+        <!-- <label for="floatInput">Email</label> -->
+    </div>
+<br>
+    <div class="form">
+        <input type="text" class="form-control  121" placeholder="Last Name" id="Lname">
+        <!-- <label for="floatInput">Password</label> -->
+    </div>
+</div>
+<br>
+<div class="form" style="flex-wrap: wrap;" >
+    <input type="number"  class="form-control  121 " placeholder="Phone No#" id="pname">
+    <!-- <label for="floatInput">Email</label> -->
+</div>
+<br>
+    <div class="form" style="flex-wrap: wrap;">
+    <input type="date"  class="form-control  121 " placeholder="D.O.B" id="dname">
+    <!-- <label for="floatInput">Email</label> -->
+</div>  
+<br>
+
+<div class="flexkaran" style="flex-wrap: wrap;">
+<div class="form">
+    <input type="password"  class="form-control  121 " placeholder="Password" id="pwname">
+    
+</div>
+<br>
+<div class="form">
+    <input type="password"  class="form-control  121 " placeholder="Confirm Password" id="cpname">
+   
+</div>
+</div>
+<br>  
+
+
+
+
+
+
+<br>     
+<div class="btn  button   121" onclick="signup()" id="btn-btn">SignIn</div>
+
+    <br>
+    <a id="loginh" href="login.html">already have an account? <span >LogIn</span style="text-decoration: underline;"></a>
+        <br>
+    </div>
+    
+</form>
+</div>
+
+ <!-- ALL THE LOWER CODE IS ABOUT A FOOTER -->
+
+ <footer class="text-center text-lg-start text-muted" style="background-color: #FFFAFC;">
+
+    <section class="">
+      <div class="container text-center text-md-start">
+        <div class="row mt-3 text-dark">
+          <div class="col-lg-3 col-lg-3 col-xl-3">
+            <img src="images/logo.png" height="90px" width="70%" style="margin-left: -50px; margin-top: -15px;" alt="logo">
+            <br>
+            <p class="grey mx-auto text-dark"> Welcome to OutfitXchange,Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Facere,
+              iure minima optio quod ea dicta, nulla animi.
+            </p>
+            <section class="mb-4 text-dark">
+              <!-- Facebook -->
+              <a class="btn btn-floating btn-light mt-3" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-floating btn-light mt-3" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-floating btn-light  mt-3" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-floating  btn-light mt-3" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-floating m-1 btn-light mt-3" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <!--
+                             Github 
+                             <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+
+            </section>
+          </div>
+
+          <div class="col-lg-3 col-lg-3 col-xl-2 mx-auto mb-4">
+            <br>
+
+            <h5>Contact Us</h5>
+            <br>
+            <p>681 Anita St STE 106
+              <br>
+              Chula Vista, CA 91911,
+              <br>
+              Pakistan
+              <br>
+
+              +92 3122132255
+              <br>
+              info@OutfitXchnage.com
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-lg-3 col-xl-2 mx-auto mb-4">
+
+            <br>
+            <h5>Useful links</h5>
+            <br>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark">Mens</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Women</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Kids</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Accessories</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">About us</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <br>
+            <section class="">
+              <form action="">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-auto">
+                    <h5>OutfitXchange Newsletter</h5>
+                  </div>
+
+                  <div class="col-md-6 col-lg-12">
+                    <br>
+                    <div class="form-outline form-white ">
+                      <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
+
+                      <center>
+                        <button type="submit" class="btn btn-dark mt-3">
+                          Submit
+                        </button>
+                      </center>
+                    </div>
+
+
+
+                  </div>
+              </form>
+
+            </section>
+
+          </div>
+    </section>
+
+    <div class="text-center p-4 text-dark" style="background-color: rgba(0, 0, 0, 0.05);">
+      @2023 OutfitXchange - All Rights Reserved
+    </div>
+
+  </footer>
+<script src="signin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

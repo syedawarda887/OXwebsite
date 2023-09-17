@@ -1,0 +1,45 @@
+.navbar {
+    z-index: 1000; /* Add a higher z-index value */
+}
+li {
+    font-size: 15px;
+    font-weight: 400;
+    
+  }
+
+  .nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+
+  }
+
+  .superNav {
+    background-color: #E0b4b1;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    color: #242424d1;
+    font-weight: 400;
+
+  }
+  @keyframes fade-in-left {
+    0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Start offscreen to the left */
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0); /* End position, fully visible */
+    }
+    }
+    
+    /* Apply the animation to an element */
+    .fade-in-left {
+    animation: fade-in-left 2s ease-in-out forwards; /* Change the duration and easing as needed */
+    
+    }
+
+  @media only screen and (max-width: 1260px) {
+    .heading {
+      font-size: 18px;
+
+    }
+  }

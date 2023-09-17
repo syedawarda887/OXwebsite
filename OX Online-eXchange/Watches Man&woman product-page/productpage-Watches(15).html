@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+ 
+    body {
+   
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height:500px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      height: 500px;
+      background: #000;
+    }
+
+    .swiper-slide img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+    .button1{
+        background-color: rgb(207, 240, 240);
+        border: none;
+        padding: 10px 30%;
+        color: black;
+    }
+    .button1:hover{
+  background-color: rgb(158, 228, 228);  
+    }
+    /* PROFILE */
+    @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+    .profile {
+        padding: 8px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  /* height: 100vh; */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+.card {
+  /* background: rgb(246, 189, 205); */
+  background-color: #0000006e;
+  height: 150px;
+  border-radius: 4px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  position: relative;
+}
+.card h2 {
+  margin: 0;
+  padding-top:15px;
+  font-size: 20px;
+  padding-left: 8px;
+}
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+.profilebtn{
+height: 60px;
+width: 100%;
+background-color: black;
+color: white;
+border-radius: 10px;
+margin-top: 15px;
+border: none;
+font-size: 20px;
+
+}
+
+.chatbtn{
+    height: 60px;
+width: 100%;
+background-color: white;
+border: 4px solid black;
+border-radius:10px;
+margin-top: 15px;
+font-size: 20px;
+color: black;
+}
+
+
+   
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="superNav border-bottom py-2 " style="background-color: #E0b4b1;;">
+      <div class="container-fluid">
+         
+          <div class="row">
+              <div class="col-md-4 ">
+                  <img src="logo.png" height="40px" width="35%" style="margin-top: -3px;"  alt="">
+              </div>
+              <div class="col-md-4 "> 
+                  <h4 class="heading fade-in-left " style="justify-content: center; text-align: center;"
+                  >Your Fashion Sharing Hub</h4></div>            <div class="col-md-4  text-end">
+                  <span class="me-3"><i class="fa-regular fa-bell me-3 fa-lg mt-3" style="color: #020812; "></i><a class="text-muted" href="#"></a></span>
+                  <span class="me-3"><i class="fa-regular fa-comment me-3 fa-lg mt-3" style="color: #020812; "></i><a class="text-muted" href="#"></a></span>
+                  <span class="me-3"><i class="fa-regular fa-user me-3 fa-lg mt-3" style="color: #020812;" ></i><a class="text-muted" href="#"></a></span>
+              </div>
+     
+  </div>
+  </div>
+</div>
+  </header>
+
+
+
+
+    <div class="container py-5" style="padding-top: 20px;">
+        <div class="row">
+        <div class="col-md-8">
+
+           <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="watches images/watches-full-images/Womanwatches(7)full1.jpg" loading="lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="watches images/watches-full-images/Womanwatches(7)full2.jpg" loading="lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="watches images/watches-full-images/Womanwatches(7)full3.jpg" loading="lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="watches images/watches-full-images/Womanwatches(7)full4.jpg" loading="lazy" />
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+             
+
+            </div>
+            <div class="swiper-button-next" style="color: rgb(245, 157, 182);"></div>
+            <div class="swiper-button-prev"  style="color: rgb(245, 157, 182);"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- TEXT SLIDER-->
+<br>
+         <div class="text-portion1" style="border: 1px solid gray;padding: 10px;">
+             <h1> RS 1,489</h1>
+             <h3>Woman's watch style</h3>
+             <h6>location</h6>
+         </div>
+<br>
+         <div class="text-portion2" style="border: 1px solid gray;padding: 10px;">
+          <h1>Details</h1>
+          <h4><i class="fa-regular fa-circle-dot fa-xs" style="color: #e0b4b1;">&nbsp;</i>Flower dail</h4>
+          <h4><i class="fa-regular fa-circle-dot fa-xs" style="color: #e0b4b1;">&nbsp;</i>Different Colors</h4>
+          <h4><i class="fa-regular fa-circle-dot fa-xs" style="color: #e0b4b1;">&nbsp;</i>Condition = New</h4>
+          <h4><i class="fa-regular fa-circle-dot fa-xs" style="color: #e0b4b1;">&nbsp;</i>Model = Olivia Barton Londen</h4>
+      </div>
+<br>
+      <div class="text-portion2" style="border: 1px solid gray;padding: 10px;">
+        <h1>Discription</h1>
+      
+    </div>
+
+        </div>
+
+                   <!-- PROFILE -->
+        <div class="col-md-4 ">
+          <br>
+            <div class="contact"  style="border: 1px solid gray ;">
+
+           <div class="profile">
+            <div class="card">
+              <div class="card-text">
+                <div class="icon">
+                  <img src="humanicon.png" height="130px" width="auto" style="padding: 20px;" alt="">
+                </div>
+                <div class="title-total">   
+                  <!-- <div class="title">name</div> -->
+                  <h2 style="color: white;">Muhammad Ali</h2>
+              
+              <div class="desc" style="color: white; padding-top:10px;font-size: 15px; padding-left: 8px;">Member since oct 2016 interest to selling</div>
+              <div class="desc" style="color: white; padding-top:10px;font-size: 15px; padding-left: 8px;">See profile ></div>
+             
+    </div>              
+    </div>
+    </div>       
+  <button class="profilebtn"><i class="fa-solid fa-phone" style="color:white;" >&nbsp; &nbsp;</i>92 321 346080</button>
+  <button class="chatbtn"><i class="fa-solid fa-comments" style="color: #030303;">&nbsp; &nbsp;</i>Chat</button>
+
+     </div>
+     </div>
+     <br>
+<div class="location" style="border: 1px solid gray ;padding: 10px;">
+<h2>location</h2>
+</div>
+
+        </div>
+        </div>
+    </div>
+    
+
+                       
+    <footer class="text-center text-lg-start text-muted" style="background-color: #FFFAFC;">
+
+      <section class="">
+        <div class="container text-center text-md-start">
+          <div class="row mt-3 text-dark">
+            <div class="col-lg-3 col-lg-3 col-xl-3">
+              <img src="logo.png" height="90px" width="70%" style="margin-left: -50px; margin-top: -15px;" alt="logo">
+              <br>
+              <p class="grey mx-auto text-dark"> Welcome to OutfitXchange,Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Facere,
+                iure minima optio quod ea dicta, nulla animi.
+              </p>
+              <section class="mb-4 text-dark">
+                <!-- Facebook -->
+                <a class="btn btn-floating btn-light mt-3" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+                <!-- Twitter -->
+                <a class="btn btn-floating btn-light mt-3" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+  
+                <!-- Google -->
+                <a class="btn btn-floating btn-light  mt-3" href="#!" role="button"><i class="fab fa-google"></i></a>
+  
+                <!-- Instagram -->
+                <a class="btn btn-floating  btn-light mt-3" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+  
+                <!-- Linkedin -->
+                <a class="btn btn-floating m-1 btn-light mt-3" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <!--
+                               Github 
+                               <a class="btn btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+  
+              </section>
+            </div>
+  
+            <div class="col-lg-3 col-lg-3 col-xl-2 mx-auto mb-4">
+              <br>
+  
+              <h5>Contact Us</h5>
+              <br>
+              <p>681 Anita St STE 106
+                <br>
+                Chula Vista, CA 91911,
+                <br>
+                Pakistan
+                <br>
+  
+                +92 3122132255
+                <br>
+                info@OutfitXchnage.com
+              </p>
+  
+            </div>
+  
+            <div class="col-lg-3 col-lg-3 col-xl-2 mx-auto mb-4">
+  
+              <br>
+              <h5>Useful links</h5>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-dark">Mens</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Women</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Kids</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Accessories</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">About us</a>
+                </li>
+              </ul>
+  
+            </div>
+  
+            <div class="col-lg-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <br>
+              <section class="">
+                <form action="">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                      <h5>OutfitXchange Newsletter</h5>
+                    </div>
+  
+                    <div class="col-md-6 col-lg-12">
+                      <br>
+                      <div class="form-outline form-white ">
+                        <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
+  
+                        <center>
+                          <button type="submit" class="btn btn-dark mt-3">
+                            Submit
+                          </button>
+                        </center>
+                      </div>
+  
+  
+  
+                    </div>
+                </form>
+  
+              </section>
+  
+            </div>
+      </section>
+  
+      <div class="text-center p-4 text-dark" style="background-color: rgba(0, 0, 0, 0.05);">
+        @2023 OutfitXchange - All Rights Reserved
+      </div>
+  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      lazy: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>
